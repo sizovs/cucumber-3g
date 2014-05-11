@@ -1,6 +1,7 @@
 ## Example integration of Cucumber, Groovy, Guice and Gradle
 
 ### Features
+- Simplicity :)
 - Thread-safe parallel scenario execution
 - Sharing state among step definitions 
 - IntelliJ-friendly package layout which does not require Glue path modification
