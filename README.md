@@ -1,11 +1,11 @@
 ## Example integration of Cucumber, Groovy, Guice and Gradle
 
 ### Features
-- Simplicity :)
 - Thread-safe parallel scenario execution
 - Sharing state among step definitions 
 - IntelliJ-friendly package layout which does not require Glue path modification
 - Scenario execution during Gradle "test" task
+- Simplicity :)
 
 ### Solution description
 The basic idea is to make proper use of World - an object which stepdefs delegate to and which is unique to every scenario. In this solution World keeps references to all Guice-managed dependencies which are directly accessible from stepdefs. IntelliJ makes sure dependencies from World are visible inside stepdefs.
