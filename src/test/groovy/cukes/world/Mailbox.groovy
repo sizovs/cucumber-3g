@@ -16,7 +16,9 @@ class Mailbox {
     }
 
     def hasMessageWithText(String text) {
-        messages.any { Message it -> it.text == text }
+        messages.any { Message it ->
+            assert it.text == text
+        }
     }
 
     static class Message {
